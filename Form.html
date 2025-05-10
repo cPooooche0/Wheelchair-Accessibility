@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wheelchair Accessbility In Manor Mills</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Wheelchair Accessbility In Manor Mills">
+    <meta name="keywords" content="HTML, CSS, grid">
+    <meta name="author" content="Cathal O'Carroll">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>    
+    
+<body>
+ <!---HEADER (with the main title)-->
+<header>
+  
+    <h1 id="maintitle">Wheelchair Accessbility In Manor Mills</h1>
+    
+         <!---Main Navigation with dropdown menu-->
+    <nav>
+        <!---Active ID to help show what page of the website user is on-->
+         <!---dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">Home</button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+            </div>
+        
+
+        <!---dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">About</button>
+                    <div class="dropdown-content">
+                           <a href="AboutPage.html">About This Website?</a>
+                           <a href="UD.html">What is Universal Design?</a>
+                    </div>
+            </div>
+         <!---dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">Shops</button>
+                    <div class="dropdown-content">
+                          <a href="Shops.html">Shops</a>
+                          <a href="Food.html">Food</a>
+                          <a href="Clothes.html">Clothes</a>
+                          <a href="Medical.html">Medical</a>
+                          <a href="Bathroom.html">Bathrooms</a>
+                    </div>
+              </div>
+         <!---dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">Routes</button>
+                    <div class="dropdown-content">
+                          <a href="Routes.html">Routes</a>
+                          <a href="car.html">By Car</a>
+                          <a href="Pedestrian.html">For Pesdestrian</a>
+                    </div>
+              </div>
+
+            <a href="Form.html" id="active">Form</a>    
+    </nav>
+ 
+</header>
+
+    
+<!---Content-->
+
+<main>
+   
+  
+<!---PageTitle-->
+
+ <div id="pagetitle">
+        <h1>Form</h1>
+</div>  
+    
+ <form action="userdata.html" method="get" enctype="multipart/form-data">
+        
+        
+<!-- Login Details -->
+        
+        <fieldset>
+        
+            <legend>Section 1</legend>
+            
+            <p class="instructions">Please Enter your details below</p>
+            
+            <div class="divA">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+
+            <div class="divA">
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname">
+            </div>
+
+            <div class="divA">
+                <label for="email">Email:</label>
+                <input name="email" type="email" id="email">
+            </div>
+
+            <div class="divA">
+                <label for="tel">Phone:</label>
+                <input name="tel" type="tel" id="tel">
+            </div>
+    
+        </fieldset>
+   
+<!-- *******************Personaility**************** -->
+     
+     <fieldset>
+         
+         <legend>I am.....</legend>
+            
+            <p class="instructions">Who are you?</p>
+            
+            <div class="divD">
+                <label for="Who">I am a... </label>
+                <select name="Who" id="Who">
+                    <optgroup label="wheelchair">
+                        <option value="disability worker/advocate">Disability Worker/Advocate </option>
+                        <option value="student">Student</option>
+                        <option value="lecturer">Lecturer</option>
+                        <option value="causal">Causal Viewer</option>
+                    </optgroup> 
+                </select>
+            </div>
+         
+     </fieldset>
+     
+<!---Age-->
+        
+        
+        <fieldset>
+        
+            <legend>How are old are you?</legend>
+        
+         
+            <div class="radios">
+                
+                <p class="instructions">Select the range</p>
+            
+                <div class="left">
+                    <div class="divC">
+                        <input type="radio" name="agerange" id="0-17" value="0-17">
+                        <label for="0-17">0-17</label>
+                    </div>
+                    <div class="divC">
+                        <input type="radio" name="agerange" id="18-25" value="18-25">
+                        <label for="18-25">18-25</label>
+                    </div>            
+                    <div class="divC">
+                        <input type="radio" name="agerange" id="25-35" value="25-35">
+                        <label for="25-35">25-35</label>
+                    </div>
+                </div>
+            
+                <div class="right">
+                    <div class="divC">
+                        <input type="radio" name="agerange" id="35-50" value="35-50">
+                        <label for="35-50">35-50</label>
+                    </div>
+                    <div class="divC">
+                        <input type="radio" name="agerange" id="50-65" value="50-65">
+                        <label for="50-65">50-65</label>
+                    </div>
+                    <div class="divC">
+                        <input type="radio" name="agerange" id="65+" value="65+">
+                        <label for="65+">65+</label>
+                    </div>             
+                </div>
+                                    
+            </div>
+         
+        </fieldset>
+     
+    
+     
+<!-- Positive Feedback  -->
+        
+        <fieldset>
+        
+            <legend>What page did you find the most interesting from this website?</legend>
+ 
+<!-- Positive Feedback checkbox  -->
+      
+            <div class="checkboxes">
+                <p class="instructions">Select here:</p>
+            
+                <div class="left">
+                    <div class="divB">
+                        <input type="checkbox" name="UD-good" id="UD-good">
+                        <label for="UD-good">What is Universal Design</label>
+                    </div>
+                     <div class="divB">
+                        <input type="checkbox" name="food-good" id="food-good">
+                        <label for="food-good">Food</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="clothes-good" id="clothes-good">
+                        <label for="clothes-good">Clothes</label>
+                    </div>  
+                   <div class="divB">
+                        <input type="checkbox" name="medical" id="medical-good">
+                        <label for="medical-good">Medical</label>
+                    </div>  
+                </div>
+            
+                <div class="right">
+                    <div class="divB">
+                        <input type="checkbox" name="bathroom-good" id="bathroom-good">
+                        <label for="bathroom-good">Bathrooms</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="car-good" id="car-good">
+                        <label for="car-good">By Car Route</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="pedestrian-good" id="pedestrian-good">
+                        <label for="pedestrian-good">For Pedestrian Route</label>
+                    </div>                
+                </div>   
+            </div>
+<!-- Positive Feedback textarea  -->
+
+            <p class="instructions textarea-fix">Tell us why?</p>
+            
+            <div class="divD">
+                <textarea name="feedback-good" id="feedback-good" cols="60" rows="5" placeholder="Type anything"></textarea>
+            </div>
+            
+        </fieldset>
+     
+     
+     
+<!-- Negative Feedback  -->
+        
+        <fieldset>
+        
+            <legend>What page did you find the least interesting or informative from this website?</legend>
+ 
+<!-- Negative Feedback checkbox  -->
+      
+            <div class="checkboxes">
+                <p class="instructions">Select here:</p>
+            
+                <div class="left">
+                    <div class="divB">
+                        <input type="checkbox" name="UD-bad" id="UD-bad">
+                        <label for="UD-bad">What is Universal Design</label>
+                    </div>
+                     <div class="divB">
+                        <input type="checkbox" name="food-bad" id="food-bad">
+                        <label for="food-bad">Food</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="clothes-bad" id="clothes-bad">
+                        <label for="clothes-bad">Clothes</label>
+                    </div>  
+                   <div class="divB">
+                        <input type="checkbox" name="medical-bad" id="medical-bad">
+                        <label for="medical-bad">Medical</label>
+                    </div>  
+                </div>
+            
+                <div class="right">
+                    <div class="divB">
+                        <input type="checkbox" name="bathroom-bad" id="bathroom-bad">
+                        <label for="bathroom-bad">Bathrooms</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="car-bad" id="car-bad">
+                        <label for="car-bad">By Car Route</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="pedestrian-bad" id="pedestrian-bad">
+                        <label for="pedestrian-bad">For Pedestrian Route</label>
+                    </div>                
+                </div>   
+            </div>
+<!-- Negative Feedback textarea  -->
+
+            <p class="instructions textarea-fix">Tell us why</p>
+            
+            <div class="divD">
+                <textarea name="feedback-bad" id="feedback-bad" cols="60" rows="5" placeholder="Type anything. Is there anything more that can be done?"></textarea>
+            </div>
+            
+        </fieldset>
+   
+      
+     
+<!-- For Wheelchair users -->
+        
+        <fieldset>
+        
+            <legend>For Wheelchair Users</legend>
+ 
+
+<!-- Have you been to Manor Mills Shopping Centre?  -->
+
+            <div class="checkboxes">
+                <p class="instructions">Have you been to Manor Mills Shopping Centre?</p>
+            
+                <div class="left">
+                    <div class="divB">
+                        <input type="checkbox" name="yes" id="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                </div>
+            
+                <div class="right">
+                    <div class="divB">
+                        <input type="checkbox" name="no" id="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>   
+            </div>
+          
+  <!-- Was this information accurate from your experiences?  -->
+
+            <div class="checkboxes">
+                
+                <p class="instructions textarea-fix">Was this information accurate from your experiences?</p>
+                
+                <div class="left">
+                    <div class="divB">
+                        <input type="checkbox" name="yes-2" id="yes-2">
+                        <label for="yes-2">Yes</label>
+                    </div>
+                </div>
+                       
+                <div class="right">
+                    <div class="divB">
+                        <input type="checkbox" name="no-2" id="no-2">
+                        <label for="no-2">No</label>
+                    </div>
+                </div> 
+                
+                <div class="divD">
+                    <textarea name="feedback" id="feedback" cols="60" rows="5" placeholder="Type anything"></textarea>
+                </div>
+                
+            </div>                   
+            
+  <!-- If yes, how often would go?  -->
+
+            <div class="checkboxes">
+                <p class="instructions">If yes, how often would go? </p>
+            
+                <div class="left">
+                    <div class="divB">
+                        <input type="checkbox" name="weekly" id="weekly">
+                        <label for="weekly">Weekly</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="monthly" id="monthly">
+                        <label for="monthly">Monthly</label>
+                    </div>
+                    <div class="divB">
+                        <input type="checkbox" name="1-3" id="1-3">
+                        <label for="1-3">1-3 times a year?</label>
+                    </div>
+                </div>
+            
+       
+            </div>
+            
+           
+ 
+            
+        </fieldset>
+     
+<!-- Submit button-->
+
+        <fieldset>
+            <div class="button">
+                <div class="leftbutton">
+                    <button type="submit" id="submit" >Submit form</button>
+                </div>
+                <div class="rightbutton">
+                    <button type="reset" id="reset">Reset form</button>
+                </div>           
+            </div>            
+        </fieldset>
+
+        
+    </form>
+    
+</main>
+
+<footer>
+  <p>Design By Cathal O'Carroll</p>
+</footer>
+
+    
+ 
+</body>
+</html>
